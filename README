@@ -1,0 +1,5 @@
+## TO BUILT THE DOCKER WITH NVIDIA_SUPPORT
+    sudo docker build -t project_tacto .
+## TO RUN
+    sudo docker run --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm -it project_tacto /bin/bash
+## 
